@@ -1,0 +1,42 @@
+                Artifical Intelligence Model Metadata Extactor
+
+Jason tsay                        Alan Braz               Martin Hirzel          
+IBM Rezearch                      IBM Reasearch           Avraham Shinnar
+Yorktown Height,NewYork,USA       sao Paulo,Brazil        Todd Mummert
+                                                          IBM Research
+                                                          Yorktown Heights, New York, USA
+
+International Conference on Mining Software Repositories (MSR ’20), October
+5–6, 2020, Seoul, Republic of Korea. ACM, New York, NY, USA,
+
+Introduction:
+         Our definition of model includes both traditional machine learning
+(ML) and deep learning models. AI as an engineering practice is
+still in its early stages with often unpredictable and costly results
+(both in terms of time and quality) which are often difficult to
+reproduce . The sheer amount of possible AI approaches and
+algorithms and recent increase in released AI frameworks
+result in a large variety of AI models and representations. The
+sheer variety and lack of standardization results in models that are
+difficult to interact with and reason across at scale. For example,
+even if two models use the same AI framework, they may be in very
+different domains such as Vision or Natural Language Processing
+(NLP) or use different algorithms or datasets. Even when a model’s
+code is available, often using or understanding this model requires
+much manual effort, sometimes even requiring reading associated
+papers.
+
+Motivation:
+           AIMMX is meant to be simple to
+use: once it is instantiated with a GitHub API key, then the user
+calls a function with a desired GitHub URL which then runs the
+extractors and returns the extracted metadata. The advantages of
+choosing to use software repositories and GitHub specifically are
+that they are already in common use for AI development.
+
+ CONCLUSIONS:
+           This paper describes AIMMX which we intend as a step towards
+furthering engineering support for AI development through providing standardized metadata for existing AI models. We envision that
+generating analyzable metadata for disparate models is both the
+first step towards managing models at scale and adapting existing
+mining software repositories techniques to AI models.
