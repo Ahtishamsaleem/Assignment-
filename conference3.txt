@@ -1,0 +1,41 @@
+               Measuring Software Testability Modulo Test Quality
+
+Valerio Terrangni           Pasquale Salza                Mauro Pezze
+Switzerland                 University of Zurich          Scahaffhausen Institute of technology
+                            Switzerland                   Switzerland
+
+Introduction:
+             It is well understood that the effort of testing software systems
+depends on the artifacts under test, meaning that some software
+systems are easier to test than others. Comprehending
+the relation between software artifacts and test effort is extremely
+important to control the cost of testing and improve the accuracy of
+test plans. Software Testability captures the impact of software
+artifacts on testing by estimating the degree to which a software
+system or component under test supports its own testing. A software
+system with a high degree of testability results in a low test effort.
+
+Methodology:
+            . We produced statistically significant and general
+results for Java software systems, by conducting an experimental
+study on a large set of heterogeneous Java software systems of
+different size and category. Because heterogeneous projects are
+likely to have different test-quality criteria, we introduce a novel
+normalization procedure that homogenizes the values of test-effort
+metrics according to the values of test-quality metrics.
+We target systems designed with the Object Oriented
+programming paradigm [45], which is based on the concept of “objects”
+(instances of classes) that can contain both data (object fields) and
+code (methods). In particular, we consider systems written in the
+Java language.
+Mutation analysis is a
+well known alternative approach to evaluate the effectiveness of a
+test suite. Mutation analysis seeds artificial faults in the class
+under test, producing faulty versions (called mutants).
+
+Result:
+      Our results indicate that normalizing test effort with test quality
+largely increases the correlation between class metric and test effort.
+An improved correlation between class metric and test effort means
+a better prediction of test effort
+      
