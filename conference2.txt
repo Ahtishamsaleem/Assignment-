@@ -1,0 +1,51 @@
+   Data Loss Detector: Automatically Revealing Data Loss Bugs in Andriod Apps
+
+Oliviero Ringanelli                Simone Paolo Mottadelli              Claudio Rota 
+university of Milano-Bicocca       Unversity of Milano-Bicocca          University of Milano-Bicocco
+Milan,Italy                        Milan,Italy                          Milan,Italy
+
+                     Daniela Micucci                           leonardo Mariai
+                     University of Milano-Bicocca              University of Milano-Bicocca
+                     Milan,Italy                               Milan,Italy
+
+Data Loss Bugs in Android Apps. In Proceedings of the 29th ACM SIGSOFT
+International Symposium on Software Testing and Analysis (ISSTA ’20), July
+18–22, 2020, Virtual Event, USA. ACM, New York, NY, USA
+
+Introduction:
+            Android apps consist of components, such as activities, fragments,
+and services, whose behavior must comply with well-defined
+lifecycles . For instance, activities can be in states such
+as created, paused, resumed, and stopped, and transitions between
+these states produce callbacks that must be handled by the activities.
+Interestingly, some of these callbacks might be particularly tricky
+to implement. This is the case of the callbacks produced by stopstart events,
+which are system events that may force the destruction
+and then the reinstantiation of a running activity. Stop-start
+events occur every time the execution of an app is stopped and then
+resumed. Typical cases include answering a phone call, switching
+between apps, and rotating the smartphone to change its layout
+
+Motivation:
+           When a stop-start event is not properly handled, the Android app
+is said to be affected by a data loss fault, that is, a fault that causes
+one or more state variables to lose their values. Data loss faults may
+affect the correctness of the apps in many different ways. In the best
+cases, they force the users to enter again inputs that had already
+been entered, deteriorating the quality of the user experience.
+
+Methodology:
+           The oracle strategies presented in this paper relate to the work
+on metamorphic testing. Metamorphic testing exploits metamorphic relations,
+which are relations on multiple executions of the software, to check the
+correctness of the observed behavior. 
+The neutral sequences of operations that DLD uses to reveal data loss
+problems can be seen as a specific class of metamorphic relations
+that relate executions with and without these sequences.
+
+Result:
+       This paper presents Data Loss Detector (DLD), an automatic
+test case generation technique designed to reveal data loss faults.
+DLD exploits an exploration strategy biased towards the discovery
+of new app states, data-loss-revealing actions, and two dedicated
+oracle-based strategies to automatically reveal data loss problems.
